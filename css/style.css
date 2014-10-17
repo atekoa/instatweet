@@ -1,0 +1,166 @@
+
+/**** Base styles ****/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  padding: 5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+  font-size: 13px;
+  background: #666;
+  color: #FFF;
+}
+
+
+* {
+  margin: 0;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+h1, h2, .element {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1, h2, h3 { font-weight: bold; }
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3, h3 a {
+  font-size: 20px;
+  background: #FFF;
+  color: #333;
+  text-decoration: none;
+}
+
+.tweet {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+
+.tweet .text {
+  bottom: 0px;
+  font-size: 12px;
+  max-width: 300px;
+}
+
+.tweet .time {
+  background: #333;
+}
+
+.tweet .fullname {
+  font-size: 20px;
+  font-weight: bold;
+  left: 5px;
+  top: 5px;
+  color: #333;
+  background: #FFF;
+  border: 0px solid #333;
+}
+
+
+.photo {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+
+.photo * {
+  margin: 0;
+}
+
+.photo .text {
+  bottom: 0px;
+  font-size: 12px;
+}
+
+.photo .fullname {
+  font-size: 20px;
+  font-weight: bold;
+  left: 5px;
+  top: 5px;
+  color: #333;
+  background: #FFF;
+  border: 0px solid #333;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
